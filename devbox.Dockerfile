@@ -14,10 +14,10 @@ RUN apt-get install -y \
     screen \
     strace \
     tcpdump \
-    wget \
+    wget
 
 # Install go
-RUN curl https://go.googlecode.com/files/go1.2.1.linux-amd64.tar.gz | tar -C /usr/local -zx
+RUN curl https://storage.googleapis.com/golang/go1.5.1.linux-amd64.tar.gz | tar -C /usr/local -zx
 ENV GOROOT /usr/local/go
 ENV PATH /usr/local/go/bin:$PATH
 
